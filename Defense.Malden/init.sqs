@@ -1,0 +1,3 @@
+player createDiaryRecord ["Diary", ["Mission", "The enemy has performed a surprise landing on our island on Malden. Defend it at all costs!"]];
+
+[west, "task1", ["Defend the <marker name='Base'>island base</marker> and eliminate all attackers.", "Defend the Base", "Base"], objNull, "ASSIGNED", 0, true] call BIS_fnc_taskCreate;

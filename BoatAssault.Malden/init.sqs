@@ -1,0 +1,7 @@
+player createDiaryRecord ["Diary", ["Mission", "We need to infiltrate La Riviere and eliminate fuel trucks to disrupt enemy supplies. Once done, escape the area."]];
+
+[west, "task1", ["Destroy the <marker name='fuelTrucks'>fuel trucks</marker> in the harbor of La Riviere.", "Destroy the Fuel Trucks", "fuelTrucks"], objNull, "ASSIGNED", 0, true] call BIS_fnc_taskCreate;
+
+[west, "task2", ["(Optional) Clear <marker name='LaRiviereFlag'>La Riviere</marker> of all enemy forces.", "(Optional) Secure La Riviere", "LaRiviereFlag"], objNull, "CREATED", 0, true] call BIS_fnc_taskCreate;
+
+[west, "task3", ["<marker name='Escape'>Escape La Riviere</marker> using the boats we have provided you.", "Escape", "Escape"], objNull, "CREATED", 0, true] call BIS_fnc_taskCreate;
