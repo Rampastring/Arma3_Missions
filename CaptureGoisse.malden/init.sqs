@@ -1,0 +1,8 @@
+player createDiaryRecord ["Diary", ["Mission", "After capturing Vigny and La Pessagne, the flank is now secured for a push on Goisse. The resistance on Malden will help us in capturing it."]];
+player createDiaryRecord ["Diary", ["Approach", "The <marker name='ResStart'>resistance</marker> will flank and destroy <marker name='enemyreinfs'>an enemy tank column</marker> approaching from the southeast. Meanwhile, <marker name='BluforStart'>NATO forces</marker> will push to <marker name='Goisse'>Goisse</marker>.<br/><br/>Once the Resistance has dealt with the tank column, they will also join in on the assault on Goisse."]];
+
+[resistance, "task1", ["Destroy the <marker name='enemyreinfs'>enemy tank column approaching from the southeast</marker>.", "Destroy the Tank Column", "deprecated"], objNull, "CREATE", 0, true] call BIS_fnc_taskCreate;
+[resistance, "task2", ["Capture <marker name='Goisse'>Goisse</marker> and eliminate all opposition.", "Capture Goisse", "deprecated"], objNull, "CREATE", 0, true] call BIS_fnc_taskCreate;
+[west, "task3", ["Capture <marker name='Goisse'>Goisse</marker> and eliminate all opposition.", "Capture Goisse", "deprecated"], objNull, "ASSIGNED", 0, true] call BIS_fnc_taskCreate;
+
+
