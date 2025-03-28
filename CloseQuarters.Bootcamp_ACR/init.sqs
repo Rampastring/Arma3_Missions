@@ -1,0 +1,6 @@
+player createDiaryRecord ["Diary", ["Situation", "The enemy botched their troop rotation. This has left <marker name='Vybor'>Vybor</marker> with a relatively weak garrison. We have a chance to counterattack and take it back!"]];
+player createDiaryRecord ["Diary", ["Mission", "Clear <marker name='Vybor'>Vybor</marker> of all enemy forces."]];
+
+[west, "task1", ["Capture <marker name='Vybor'>Vybor</marker> and eliminate all enemy forces in the town.", "Capture Vybor", "deprecated"], objNull, "ASSIGNED", 0, true] call BIS_fnc_taskCreate;
+
+
