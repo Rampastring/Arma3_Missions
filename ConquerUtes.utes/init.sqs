@@ -1,0 +1,7 @@
+player createDiaryRecord ["Diary", ["Situation", "We are landing on Utes. We need to capture this strategic island with its airport to prepare for the next stage of our offensive."]];
+player createDiaryRecord ["Diary", ["Mission", "The primary force will land from <marker name='SoutheastStart'>the southeast</marker> and will directly assault <marker name='Strelka'>Strelka</marker>.<br/><br/>A smaller group will flank from the <marker name='NortheastStart'>the northeast</marker> and take <marker name='Hamlet'>the hamlet</marker>.<br/><br/>Afterwards, both groups shall proceed to take <marker name='Airport'>the airport</marker>."]];
+
+[west, "task1", ["Eliminate all enemy forces in <marker name='Strelka'>Strelka</marker>.", "Capture Strelka", "deprecated"], objNull, "ASSIGNED", 0, true] call BIS_fnc_taskCreate;
+[west, "task2", ["Eliminate all enemy forces in <marker name='Hamlet'>the hamlet near Strelka</marker>.", "Capture the Hamlet near Strelka", "deprecated"], objNull, "CREATED", 0, true] call BIS_fnc_taskCreate;
+[west, "task3", ["Eliminate all enemy forces on <marker name='Airport'>the airport</marker>.", "Capture the Airport", "deprecated"], objNull, "CREATED", 0, true] call BIS_fnc_taskCreate;
+
