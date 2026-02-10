@@ -1,0 +1,17 @@
+player createDiaryRecord ["Diary", ["MLRS Support", "You can use the radio (8-1) to call in MLRS fire support using your map. The missiles should prove effective in destroying particularly fortified buildings."]];
+
+player createDiaryRecord ["Diary", ["Reinforcements", "You can use the radio (0-0-0) to call for reinforcements, two fire teams. They will attack from <marker name='friendlyReinforcements'>the southwest</marker>. We know it's not much, but it'll have to do."]];
+
+player createDiaryRecord ["Diary", ["Enemy readiness", "The enemy has mostly second-grade troops in the town, but they have been able to prepare strong positions. Expect heavy resistance. The Russians are certainly using the buildings to their advantage - watch out for enemies behind corners and windows."]];
+
+player createDiaryRecord ["Diary", ["Mission", "Russians have heavily fortified La Trinité. We need to take it back.<br/><br/>It is enough for us to clear five particularly fortified zones of the town. If we succeed, the follow-up troops can mop up the rest."]];
+
+[resistance, "task1", ["Clear the <marker name='markerZoneOne'>southern compound</marker> of all enemies.", "Clear the southern compound", "markerZoneOne"], objNull, "ASSIGNED", 0, true] call BIS_fnc_taskCreate;
+
+[resistance, "task2", ["Clear the <marker name='markerZoneTwo'>eastern compound</marker> of all enemies.", "Clear the eastern compound", "markerZoneTwo"], objNull, "CREATED", 0, true] call BIS_fnc_taskCreate;
+
+[resistance, "task3", ["Clear the <marker name='markerZoneThree'>northern compound</marker> of all enemies.", "Clear the northern compound", "markerZoneThree"], objNull, "CREATED", 0, true] call BIS_fnc_taskCreate;
+
+[resistance, "task4", ["Clear the <marker name='markerZoneFour'>southwestern compound</marker> of all enemies.", "Clear the southwestern compound", "markerZoneFour"], objNull, "CREATED", 0, true] call BIS_fnc_taskCreate;
+
+[resistance, "task5", ["Clear the <marker name='markerZoneFive'>northwestern compound</marker> of all enemies.", "Clear the northwestern compound", "markerZoneFive"], objNull, "CREATED", 0, true] call BIS_fnc_taskCreate;
