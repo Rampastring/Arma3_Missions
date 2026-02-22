@@ -1,0 +1,3 @@
+player createDiaryRecord ["Diary", ["Zones", "Our commanders have divided the city to 8 zones. They are watching the situation and will tell us which zones the enemy is present in. We can consider the defense succcessful when all zones have been free of Russians for long enough."]];
+player createDiaryRecord ["Diary", ["Mission", "The Russians are attacking Zargabad. We have nowhere to go. We have to defend our homes!<br/><br/>They are threatening to turn our city into another Grozny if we resist, but a rubble free of Russians is better than a city with them."]];
+
